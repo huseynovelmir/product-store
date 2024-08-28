@@ -49,7 +49,7 @@ function addProductToUI(productObj) {
 
   const productName = document.createElement("div");
   productName.classList.add("productName");
-  productName.innerText = `${productObj.name} , ${productObj.price} AZN`;
+  productName.innerText = `${productObj.name} ( ${productObj.price} AZN`;
 
   const deleteBtn = document.createElement("button");
   deleteBtn.classList.add("productRemove");
