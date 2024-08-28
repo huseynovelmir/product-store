@@ -74,14 +74,7 @@ body {
   margin-bottom: 20px;
 }
 .product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--padding);
-  background-color: var(--product-bg);
-  border-radius: var(--border-radius);
-  margin-bottom: 10px;
-  padding: 10px;
+
   button {
     padding: 10px 25px;
     border: none;
