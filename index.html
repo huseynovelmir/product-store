@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Product Store</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form class="inputForm">
+            <input class="productName" type="text" placeholder="Məhsulun adı" required>
+            <input class="productPrice" type="number" placeholder="Qiymət" required>
+            <button type="submit" class="add-btn">Əlavə et</button>
+        </form>
+
+        <div class="products">
+
+            <!-- <div class="product">
+                <div class="productName">Məhsulun adı</div>
+                <button class="productRemove">Sil</button>
+            </div> -->
+
+        </div>
+
+        <div class="summary">
+            <div>Məhsul sayı: <span id="productCount">0</span></div>
+            <div>Ümumi qiymət: <span id="totalPrice">0 AZN</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

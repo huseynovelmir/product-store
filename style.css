@@ -1,0 +1,116 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --body-bg: #f9f9f9;
+  --input-border: #ccc;
+  --container-shadow: rgba(0, 0, 0, 0.1);
+  --products-area-bg: #f7f7f7;
+  --product-bg: #dcdce1;
+  --summary-bg: #e0e0e0;
+  --font-family: Arial, sans-serif;
+  --container-max-width: 800px;
+  --delete-btn-bg: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  padding: 20px;
+  background-color: var(--body-bg);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--container-shadow);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+.themeBtn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+.inputForm {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+  }
+  button {
+    width: 40%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+  }
+}
+
+.products {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: var(--products-area-bg);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  background-color: var(--product-bg);
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  padding: 10px;
+  button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--delete-btn-bg);
+    color: var(--white);
+    cursor: pointer;
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--summary-bg);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .inputForm {
+    flex-direction: column;
+    button {
+      width: 100%;
+    }
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
