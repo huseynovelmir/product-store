@@ -1,7 +1,7 @@
 :root {
   --white: #fff;
   --black: #000;
-  --body-bg: #f9f9f9;
+  --body-bg: #c63636;
   --input-border: #ccc;
   --container-shadow: rgba(0, 0, 0, 0.1);
   --products-area-bg: #f7f7f7;
@@ -25,6 +25,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: var(--container-max-width);
   margin: 0 auto;
   background-color: var(--white);
@@ -71,6 +72,7 @@ body {
   background-color: var(--products-area-bg);
   border-radius: 5px;
   margin-bottom: 20px;
+  overflow-y: auto;
 }
 .product {
   width: 100%;
@@ -84,7 +86,6 @@ body {
   .productName {
     height: max-content;
     width: 70%;
-    overflow-y: auto;
   }
 
   button {
@@ -106,6 +107,8 @@ body {
   background-color: var(--summary-bg);
   border-radius: 5px;
   font-weight: bold;
+  position: absolute;
+  bottom: 10px;
 }
 
 @media (max-width: 600px) {
